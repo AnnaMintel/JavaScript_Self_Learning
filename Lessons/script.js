@@ -31,8 +31,14 @@ for (let i = 0; i < a.length; i++) {
     a.unshift(lastNum);
     console.log(a);
 }
-
+                ЗАДАЧА 4. Объединение массивов.
 */
+let animalsWild = ["Tiger", "Lion"];
+let animalsHome = ["Cat"];
+let animalsInZoo = animalsWild.concat(animalsHome);
+
+console.log(animalsInZoo);   
+
 
 
 

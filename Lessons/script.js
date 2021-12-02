@@ -48,9 +48,18 @@ let randomWord = randomWords[Math.floor(Math.random() * 5)];
 let randomRes = "У тебя " + randomBodyParts + " словно " + 
 randomAdjective + " " + randomWord + "!!!";
 console.log(randomRes);
+
+                ЗАДАЧА 5.Выбор рандомного ученика из списка(50 чел)
+let student = Math.round(Math.floor(Math.random()*100)/2);
+console.log(student);
+
+                ЗАДАЧА 6. Объекты
+let house = {
+    "color": "green",
+    "size": "big"
+}
+console.log(house);
 */
-
-
 
 
 

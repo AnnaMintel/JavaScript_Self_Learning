@@ -1,4 +1,4 @@
-/*              ЗАДАЧА 1. Если посетителю 12 лет или больше, он может проходить. Если ему еще 
+/*             ЗАДАЧА 1. Если посетителю 12 лет или больше, он может проходить. Если ему еще 
 не исполнилось 12, но его сопровождает взрослый, пусть тоже проходит. Во всех
 остальных случаях вход запрещен.
 let age = 13;
@@ -167,6 +167,41 @@ for (let i = 0; i < cats.length; i++){
     result.push(name);
 }
 console.log(result);
-*/
 
+                    ЗАДАЧА 9. Conditions
+                    1. IF
+const MyName = "Hanna";
+console.log("Hello, " + MyName);
+if (MyName.length < 7) {
+    console.log("Your name is too big!");
+}
+                    2. IF ELSE
+
+
+
+                    3. IF ... ELSE IF
+
+                    
+                    ЗАДАЧА 10. В очереди на мойку 3 авто. Если приезжаети новая авт и она с 
+                мигалками, она становится в первую очередб, без - в конец. Вероятность 50/50.
+
+let cars = ["BMW", "Mini", "Audi"];
+let newCar = " ";
+let random = Math.floor(Math.random()*100);
+
+if (random > 50){
+    newCar = "LightSignals";
+} else {
+    newCar = "withoutLightSignals";
+}
+if (newCar === "LightSignals") {
+    cars.unshift(newCar)
+    console.log(cars);
+    console.log("Police car");
+} else  {
+    cars.push(newCar)
+    console.log(cars);
+    console.log("Usual car");
+} 
+*/
 

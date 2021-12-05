@@ -1,6 +1,5 @@
-/*              ЗАДАЧА 1. Если посетителю 12 лет или больше,
-он может проходить. Если ему еще не исполнилось 12, но его
-сопровождает взрослый, пусть тоже проходит. Во всех
+/*              ЗАДАЧА 1. Если посетителю 12 лет или больше, он может проходить. Если ему еще 
+не исполнилось 12, но его сопровождает взрослый, пусть тоже проходит. Во всех
 остальных случаях вход запрещен.
 let age = 13;
 let accessableAge = 12;
@@ -59,9 +58,115 @@ let house = {
     "size": "big"
 }
 console.log(house);
+
+                ЗАДАЧА 7. Получение информации о конкретном свойстве одного из объектов
+let cats = [
+    {
+        name: "Dark",
+        pregnant: false,
+        birthday: 2007,
+        color: "brown",
+        placeForGames: ["house", "street"],
+        levelOfHappiness: "100%"
+    },
+    {
+        name: "Bruk",
+        pregnant: false,
+        birthday: 2003,
+        color: "red with white spots",
+        placeForGames: ["house"],
+        levelOfHappiness: "970%"
+    },
+    {
+        name: "Lily",
+        pregnant: true,
+        birthday: 2010,
+        color: "white",
+        placeForGames: ["flat"],
+        levelOfHappiness: "99%",
+        littleCats: [
+            {
+                name: "littleDark",
+                birthday: 2007,
+                color: "brown",
+                placeForGames: ["house", "street"],
+                levelOfHappiness: "100%"
+            },
+            {
+                name: "littleBruk",
+                birthday: 2003,
+                color: "white with black spots",
+                placeForGames: ["house"],
+                levelOfHappiness: "970%"
+            }
+        ]
+
+    }
+];
+console.log(cats[2].littleCats[1].color);
+
+
+                    ЗАДАЧА 8. Добавить навого кота и вывести имена всех взрослых котов
+let cats = [
+    {
+        name: "Dark",
+        pregnant: false,
+        birthday: 2007,
+        color: "brown",
+        placeForGames: ["house", "street"],
+        levelOfHappiness: "100%"
+    },
+    {
+        name: "Bruk",
+        pregnant: false,
+        birthday: 2003,
+        color: "red with white spots",
+        placeForGames: ["house"],
+        levelOfHappiness: "970%"
+    },
+    {
+        name: "Lily",
+        pregnant: true,
+        birthday: 2010,
+        color: "white",
+        placeForGames: ["flat"],
+        levelOfHappiness: "99%",
+        littleCats: [
+            {
+                name: "littleDark",
+                birthday: 2007,
+                color: "brown",
+                placeForGames: ["house", "street"],
+                levelOfHappiness: "100%"
+            },
+            {
+                name: "littleBruk",
+                birthday: 2003,
+                color: "white with black spots",
+                placeForGames: ["house"],
+                levelOfHappiness: "970%"
+            }
+        ]
+
+    }
+];
+let newCat =  {
+    name: "Ally",
+    pregnant: false,
+    birthday: 2005,
+    color: "white",
+    placeForGames: ["house"],
+    levelOfHappiness: "970%"
+};
+cats.push(newCat);
+
+let result = [];
+
+for (let i = 0; i < cats.length; i++){
+    let name = cats[i].name;
+    result.push(name);
+}
+console.log(result);
 */
-
-
-
 
 

@@ -175,12 +175,15 @@ console.log("Hello, " + MyName);
 if (MyName.length < 7) {
     console.log("Your name is too big!");
 }
-                    2. IF ELSE
-
-
-
-                    3. IF ... ELSE IF
-
+                    2. IF ... ELSE IF... ELSE
+let flowers = 22;
+if(flowers <= 10){
+    console.log("This flowers are red");
+} else if(flowers <= 20 && flowers > 10){
+    console.log("There are just white flowers");
+} else {
+    console.log("We bought too much flowers");
+}
                     
                     ЗАДАЧА 10. В очереди на мойку 3 авто. Если приезжаети новая авт и она с 
                 мигалками, она становится в первую очередб, без - в конец. Вероятность 50/50.
@@ -203,5 +206,7 @@ if (newCar === "LightSignals") {
     console.log(cars);
     console.log("Usual car");
 } 
+
+                    ЗАДАЧА 11. DO WHILE & WHILE
 */
 

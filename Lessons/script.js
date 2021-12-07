@@ -207,6 +207,35 @@ if (newCar === "LightSignals") {
     console.log("Usual car");
 } 
 
-                    ЗАДАЧА 11. DO WHILE & WHILE
+                    ЗАДАЧА 11. цикл while
+let flowers = 0;
+while (flowers < 10){
+    console.log("Посчитано цветов: " + flowers + "!");
+    flowers++; 
+}
+console.log("uhhhy");
+}
+
+                    ЗАДАЧА 12. цикл for
+for(let flowers = 0; flowers < 5; flowers++) {
+    console.log("Counting: " + flowers);
+}
+
+let sellers = 7
+for(let flowers = 0; flowers < sellers; flowers++) {
+    console.log(flowers);
+}
+
+let animals = ["лев", "фламинго", "белый медведь", "удав"];
+for (var i = 0; i < animals.length; i++) {
+ console.log("В этом зоопарке есть " + animals[i] + ".");
+}
+
+                    ЗАДАЧА 13. Вывести четные числа
+let array = [23, 45, 586, 13, 22, 100];
+for (let i = 0; i < array.length; i++){
+    if(array[i]%2 === 0){
+    console.log(array[i]);}
+}
 */
 

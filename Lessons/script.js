@@ -237,5 +237,18 @@ for (let i = 0; i < array.length; i++){
     if(array[i]%2 === 0){
     console.log(array[i]);}
 } 
+
+                    ЗАДАЧА 14. Тренировка confirm, alert, prompt
+/const name = prompt("Как вас зовут?");
+/console.log("Привет, " + name);
+
+likesCats = confirm("Тебе нравятся кошки?");
+if (likesCats) {
+    console.log("Ты классная кошка!");
+   } else {
+    console.log("Что ж, не проблема. Все равно ты молодец!");
+   }
+   
+alert('this is alert');
 */
 

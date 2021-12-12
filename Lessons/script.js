@@ -274,4 +274,11 @@ drawCats(10);
 
                     ЗАДАЧА 18. 
 */
+let  printMultipleTimes = function (howManyTimes, whatToDraw) {
+    for (let i = 0; i < howManyTimes; i++) {
+    console.log(i + " " + whatToDraw);
+    }
+};
+printMultipleTimes(4, "^$*$^");
+
 

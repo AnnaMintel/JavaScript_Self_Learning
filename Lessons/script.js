@@ -250,5 +250,28 @@ if (likesCats) {
    }
    
 alert('this is alert');
+
+                    ЗАДАЧА 15. Функции (базовая структура)
+let ourFirstFunction = function() {
+    console.log("Hello, world");
+};
+ourFirstFunction();
+
+                    ЗАДАЧА 16. Передача аргумента в функцию
+let name = "Vikki";
+let sayHalloTo = function (name) {
+    console.log("Hello, " + name + "!");
+};
+sayHalloTo(name);
+
+                    ЗАДАЧА 17. Рисуем 10 котиков
+let  drawCats = function (howManyTimes) {
+    for (let i = 0; i < howManyTimes; i++) {
+    console.log(i + " =^.^=");
+    }
+   };
+drawCats(10);
+
+                    ЗАДАЧА 18. 
 */
 

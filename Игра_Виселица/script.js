@@ -15,7 +15,10 @@ let words = [
     "morning",
     "cinema",
     "poster",
-    "wife"
+    "wife",
+    "sport",
+    "lessons",
+    "wolf"
 ];
 
 // Выбираем случайное слово
@@ -28,30 +31,33 @@ for (let i = 0; i < word.length; i++) {
 }
 
 let remainingLetters = word.length;
+let attempts = 10;
 
 // Игровой цикл
-while (remainingLetters > 0) {
+while (remainingLetters > 0 && attempts > 0) {
 
-// Показываем состояние игры
+    // Показываем состояние игры
     alert(answerArray.join(" "));
 
-// Запрашиваем вариант ответа
-    let value = prompt("Угадайте букву или нажмите Отмена для выхода из игры.");
+    // Запрашиваем вариант ответа
+    let value = prompt("Угадайте букву или нажмите Отмена для выхода из игры.").toLowerCase();
     if (value === null) {
         // Выходим из игрового цикла
         break;
     } else if (value.length !== 1) {
         alert("Пожалуйста, введите только одну букву.");
+        attempts--;
     } else {
         // Обновляем состояние игры
         for (let j = 0; j < word.length; j++) {
-            if (word[j] === value) {
+            if (word[j] === value && answerArray[j] !== word[j]) {
                 answerArray[j] = value;
                 remainingLetters--;
             }
         }
+        attempts--;
     }
-// Конец игрового цикла
+    // Конец игрового цикла
 }
 
 // Отображаем ответ и поздравляем игрока

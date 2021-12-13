@@ -350,8 +350,10 @@ let num = function (a, b){
     a > b ? console.log(true) : console.log(false);
 }
 num(1, 3);
+// сокращаем код
+let num = (a, b) => a > b ? true : false ;
+console.log(num(1, 3));
 */
 
 
-let num = (a, b) => a > b ? true : false ;
-console.log(num(1, 3));
+

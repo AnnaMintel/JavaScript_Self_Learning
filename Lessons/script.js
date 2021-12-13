@@ -272,8 +272,7 @@ let  drawCats = function (howManyTimes) {
    };
 drawCats(10);
 
-                    ЗАДАЧА 18. 
-*/
+                    ЗАДАЧА 18. Передача нескольких аргументов в функцию
 let  printMultipleTimes = function (howManyTimes, whatToDraw) {
     for (let i = 0; i < howManyTimes; i++) {
     console.log(i + " " + whatToDraw);
@@ -282,3 +281,77 @@ let  printMultipleTimes = function (howManyTimes, whatToDraw) {
 printMultipleTimes(4, "^$*$^");
 
 
+                    ЗАДАЧА 19. Возврат значения из функции
+let x = 1;
+let sum = function (a) {
+ return a = a + 1;
+}
+console.log(sum(x));
+
+
+let flowers = 10;
+let seller = function (a) {
+    let res = (a * 4) / 2;
+    return res;
+}
+console.log(seller(100)); // функци работает с любым аргументом
+
+
+                    ЗАДАЧА 20. Вызов ф-ии в качестве значения
+let seller = function (a) {
+    let res = (a * 4) / 2;
+    return res;
+}
+console.log(seller(seller(10)));
+
+                    ЗАДАЧА 21. Перепишем игру на рандом под функции
+let randomWords = ["Hi", "clever", "fashion"];
+let pickWord = function (words) {
+    return words[Math.floor(Math.random() * words.length)];
+}
+console.log(pickWord(randomWords));
+
+                    ЗАДАЧА 22. Ранный выход из функции по return
+let letter = function (name){
+    if (name.length < 4) {
+        return;
+    } 
+    return "четвертая буква вашего имени: " + name[3] + ".";
+};
+console.log(letter("hanna"));
+
+                    ЗАДАЧА 23. Способы записи функций
+let math = function(num) {
+    return num * 2;
+}
+
+function math2 (num = 2){
+    return num * 2;
+}
+
+let math3 = (num) => {
+    return num * 2;
+}
+
+                    ЗАДАЧА 24. Тернарный оператор
+//1
+                    let array = [1, 2, 3, 4, 5];
+if (array[2] > 2 && array[2] < 4) {
+    console.log("Three");
+} else {
+    console.log("not three");
+} ;
+// преобразуем в тернарное выражение
+array[2] > 2 && array[2] < 4 ? console.log("Three") : console.log("not three");
+
+
+//2
+let num = function (a, b){
+    a > b ? console.log(true) : console.log(false);
+}
+num(1, 3);
+*/
+
+
+let num = (a, b) => a > b ? true : false ;
+console.log(num(1, 3));

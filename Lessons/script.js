@@ -15,6 +15,7 @@ animals.push("Dog");
 animals.unshift("Monkey");
 console.log(animals);   
 
+
                 ЗАДАЧА 3. Перезаписать последний элемент массива в начало
 let a = [1, 2, 3, 4];
 let lastNum = a.pop();
@@ -27,11 +28,13 @@ for (let i = 0; i < a.length; i++) {
     a.unshift(lastNum);
     console.log(a);
 }
+
                 ЗАДАЧА 4. Объединение массивов.
 let animalsWild = ["Tiger", "Lion"];
 let animalsHome = ["Cat"];
 let animalsInZoo = animalsWild.concat(animalsHome);
 console.log(animalsInZoo);   
+
 
                 ЗАДАЧА 5.Random
 let randomBody = ["глаз", "нос", "череп"];
@@ -48,9 +51,11 @@ let randomRes = "У тебя " + randomBodyParts + " словно " +
 randomAdjective + " " + randomWord + "!!!";
 console.log(randomRes);
 
+
                 ЗАДАЧА 5.Выбор рандомного ученика из списка(50 чел)
 let student = Math.round(Math.floor(Math.random()*100)/2);
 console.log(student);
+
 
                 ЗАДАЧА 6. Объекты
 let house = {
@@ -251,11 +256,13 @@ if (likesCats) {
    
 alert('this is alert');
 
+
                     ЗАДАЧА 15. Функции (базовая структура)
 let ourFirstFunction = function() {
     console.log("Hello, world");
 };
 ourFirstFunction();
+
 
                     ЗАДАЧА 16. Передача аргумента в функцию
 let name = "Vikki";
@@ -264,6 +271,7 @@ let sayHalloTo = function (name) {
 };
 sayHalloTo(name);
 
+
                     ЗАДАЧА 17. Рисуем 10 котиков
 let  drawCats = function (howManyTimes) {
     for (let i = 0; i < howManyTimes; i++) {
@@ -271,6 +279,7 @@ let  drawCats = function (howManyTimes) {
     }
    };
 drawCats(10);
+
 
                     ЗАДАЧА 18. Передача нескольких аргументов в функцию
 let  printMultipleTimes = function (howManyTimes, whatToDraw) {
@@ -304,12 +313,14 @@ let seller = function (a) {
 }
 console.log(seller(seller(10)));
 
+
                     ЗАДАЧА 21. Перепишем игру на рандом под функции
 let randomWords = ["Hi", "clever", "fashion"];
 let pickWord = function (words) {
     return words[Math.floor(Math.random() * words.length)];
 }
 console.log(pickWord(randomWords));
+
 
                     ЗАДАЧА 22. Ранный выход из функции по return
 let letter = function (name){
@@ -319,6 +330,7 @@ let letter = function (name){
     return "четвертая буква вашего имени: " + name[3] + ".";
 };
 console.log(letter("hanna"));
+
 
                     ЗАДАЧА 23. Способы записи функций
 let math = function(num) {

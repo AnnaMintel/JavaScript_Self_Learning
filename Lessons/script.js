@@ -377,6 +377,37 @@ let multiply = function(x, y){
 return x * y;
 }
 console.log(add(multiply(36325, 9824), 777));
-*/                                                                                        
+
+                    ЗАДАЧА 26. Напишите функцию areArraysSame, которая принимает два
+массива с числами в качестве аргументов. Она должна возвращать true, если эти массивы одинаковые 
+(то есть содержат одни и те же числа в одном и том же порядке), или false, если массивы различаются. 
+Убедитесь, что ваша функция работает правильно, запустив такой код:
+areArraysSame([1, 2, 3], [4, 5, 6]);
+false
+areArraysSame([1, 2, 3], [1, 2, 3]);
+true
+areArraysSame([1, 2, 3], [1, 2, 3, 4]);
+false
+
+РЕШЕНИЕ:
+let firstArray = [1,2,3];
+let secondArray = [1,2,3];
+let areArraysSame = function (a, b) {
+    if (a.length !== b.length){
+        return false;
+    } else {
+        let count = a.length;
+        for(let i = 0; i < b.length; i++){
+                if(a[i] !== b[i]){
+                    count--;
+                } 
+        } return count === a.length;  
+     }
+
+};
+console.log(areArraysSame(firstArray, secondArray));
+
+*/
+
 
 

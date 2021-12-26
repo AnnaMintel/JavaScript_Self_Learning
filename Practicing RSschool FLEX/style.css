@@ -1,0 +1,28 @@
+.container {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap-reverse;
+  align-content:space-between;
+
+  height: 100px;
+  border: 1px solid blue;
+}
+
+.container div {
+  min-width: 50px;
+  border: 1px solid red;
+}
+
+.flex1 {
+}
+
+.flex2 {
+}
+
+.flex3 {
+}
+
+.flex4 {
+}

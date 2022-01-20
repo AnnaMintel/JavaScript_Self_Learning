@@ -1,10 +1,15 @@
 // WOOF WOOF
 
-let dogNaME = "rover";
-let dogWeight = 20;
+function bark(name, weight) {
 
-if (dogWeight > 20){
-    console.log(dogNaME + " says WOOF WOOF");
-} else {
-    console.log(dogNaME + " says woof woof");
+if (weight > 20){
+    console.log(name + " says WOOF WOOF");
+    }   else {
+    console.log(name + " says woof woof");
+    }
 }
+
+bark("rover", 23);
+bark("spot", 13);
+bark("spike", 53);
+bark("lady", 17);

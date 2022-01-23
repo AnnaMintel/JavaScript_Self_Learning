@@ -410,7 +410,7 @@ console.log(areArraysSame(firstArray, secondArray));
 
                     ЗАДАЧА 27. Вывести количество повторений в массиве цифры 2
 let array = [1,2,4,6,8,4,2,4,2,5,6,2,2];
-function duplicate (arr){
+function dupl icate (arr){
     let count = 0;
     for (let i = 0; i < arr.length; i++){
         if(array[i] ===2){
@@ -420,7 +420,10 @@ function duplicate (arr){
     return count;
 }
 console.log(duplicate(array));
+
+
+                    ЗАДАЧА 28. 
+
+let iceCream = ["vanilla", "chocolate", "lavender"]; 
 */
-
-
 

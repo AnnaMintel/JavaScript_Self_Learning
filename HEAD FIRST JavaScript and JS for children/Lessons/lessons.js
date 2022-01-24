@@ -423,9 +423,6 @@ console.log(duplicate(array));
 
 
                     ЗАДАЧА 28. оБЪЕКТЫ + функции
-
-
-*/
 let taxi = {
     make: "Webville Motors",
     model: "Taxi",
@@ -451,3 +448,5 @@ if (worthALook) {
 } else {
     console.log("You shouls really pass on the " + taxi.make + " " + taxi.model);
 }
+
+*/

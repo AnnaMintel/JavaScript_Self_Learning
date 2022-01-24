@@ -422,8 +422,32 @@ function dupl icate (arr){
 console.log(duplicate(array));
 
 
-                    ЗАДАЧА 28. 
+                    ЗАДАЧА 28. оБЪЕКТЫ + функции
 
-let iceCream = ["vanilla", "chocolate", "lavender"]; 
+
 */
+let taxi = {
+    make: "Webville Motors",
+    model: "Taxi",
+    year: 1995,
+    color: "yellow",
+    passengers: 2,
+    miliage: 281341
+};
 
+function prequal(car) {
+    if (car.miliage > 10000) {
+        return false;
+    } else if (car.year > 1960) {
+        return false;
+    }
+    return true;
+}
+
+let worthALook = prequal(taxi);
+
+if (worthALook) {
+    console.log("You gotta check out this " + taxi.make + " " + taxi.model);
+} else {
+    console.log("You shouls really pass on the " + taxi.make + " " + taxi.model);
+}

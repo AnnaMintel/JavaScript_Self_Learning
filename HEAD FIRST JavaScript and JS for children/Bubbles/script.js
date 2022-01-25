@@ -22,17 +22,21 @@ function printAndGetHighScore(scores) {
     return highScore;
 }
 
-let highScore = printAndGetHighScore(scores);
-
-console.log("Bubbles tests: " + scores.length);
-console.log("Highest bubble score: " + highScore);
-
-let bestSolutions = [];
+function getBestSolution (scores, highScore){
+    
+    let bestSolutions = [];
 
     for (i = 0; i < scores.length; i++){
         if(scores[i] == highScore){
             bestSolutions.push(i);
         }
+    }
+    return bestSolutions;
 }
 
+let highScore = printAndGetHighScore(scores);
+console.log("Bubbles tests: " + scores.length);
+console.log("Highest bubble score: " + highScore);
+
+let bestSolutions = getBestSolution(scores, highScore);
 console.log("Solutions with the highest score: " + bestSolutions);

@@ -1,2 +1,2 @@
 # JavaScript_Self_Learning
-There are my projects about selflearning JavaScript using books, free courses and YouTube tutorials.
+There are my selflearning JavaScript projects using books, free courses and YouTube tutorials.

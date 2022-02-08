@@ -5,6 +5,20 @@ let newH1 = prompt("Enter new title: ");
 h1.innerHTML = newH1 ;
 */
 
-// jquery
+                        //       jquery
+
+/* change title 
 let newH1 = prompt("Enter new title: ");
 $("#main-h1s").text(newH1);
+*/
+
+/* СОздание новых элементов
+$("body").append("<p>new p</p>");
+*/
+
+/* Вывод элементов массива на экран
+let students = ['Anna', 'Nick', 'Ivan', 'Paul'];
+for (let i = 0; i < students.length; i++){
+    $("body").append("<p>" + students[i] + "</p>");
+}
+

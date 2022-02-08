@@ -21,4 +21,16 @@ let students = ['Anna', 'Nick', 'Ivan', 'Paul'];
 for (let i = 0; i < students.length; i++){
     $("body").append("<p>" + students[i] + "</p>");
 }
+*/
+
+/* Анимация
+$("#main-h1").slideUp(1000).slideDown(100); */
+
+/* setTimeout and setInterval
+let time = function() {
+    alert("Time is out!");
+}
+setTimeout(time, 3000); 
+clearTimeout(time);
+*/
 

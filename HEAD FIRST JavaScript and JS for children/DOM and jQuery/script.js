@@ -26,6 +26,7 @@ for (let i = 0; i < students.length; i++){
 /* Анимация
 $("#main-h1").slideUp(1000).slideDown(100); */
 
+
 /* setTimeout and setInterval
 let time = function() {
     alert("Time is out!");
@@ -34,3 +35,22 @@ setTimeout(time, 3000);
 clearTimeout(time);
 */
 
+/*
+let counter = 1;
+function printMassage() {
+    console.log ("You look at console yet " + counter + " sec");
+    counter++;
+};
+let interval = setInterval(printMassage, 1000);
+
+clearInterval(interval);
+*/
+
+/* реакция на клики
+let clickHandler = function (event) {
+    console.log("Клик! " + event.pageX + " " + event.pageY);
+    };
+$("h1").click(clickHandler);
+*/
+
+/* событие mousemove */

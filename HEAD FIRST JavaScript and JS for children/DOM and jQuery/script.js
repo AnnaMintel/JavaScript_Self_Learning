@@ -53,10 +53,3 @@ let clickHandler = function (event) {
 $("h1").click(clickHandler);
 */
 
-/* событие mousemove */
-$("html").mousemove(function (event) {
-    $("#heading").offset({
-        left: event.pageX,
- top: event.pageY
- });
- });

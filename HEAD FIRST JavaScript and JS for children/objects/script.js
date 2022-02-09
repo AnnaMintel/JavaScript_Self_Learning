@@ -24,3 +24,12 @@ let car = {
 }
 car.model();
 */
+
+/* created constructor 
+let Car = function(x, y){
+    this.speed = x;
+    this.weight = y;
+}
+let tesla = new Car (220, 1450);
+console.log(tesla);
+*/

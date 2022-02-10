@@ -1,4 +1,4 @@
-// Game "SEA BATTLE"
+/* Game "SEA BATTLE"
 
 let randomLoc = Math.floor(Math.random() * 5);
 
@@ -38,3 +38,6 @@ while (isSunk == false) {
 let statistics = "You took " + guess + " guess to sink the battleship, " +
                 "which means your shooting accuracy was " + (3/guesses);
 alert(statistics);
+
+
+*/

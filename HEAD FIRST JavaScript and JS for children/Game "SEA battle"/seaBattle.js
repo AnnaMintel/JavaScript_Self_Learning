@@ -1,3 +1,4 @@
+// functional part of the game
 let model = {
 	boardSize: 7,
 	numShips: 3,

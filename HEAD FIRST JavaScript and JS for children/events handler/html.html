@@ -6,27 +6,37 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <style>
         .block{
-            width: 200px;
-            height: 200px;
+            width: 400px;
+            height: 400px;
             background-color: aqua;
+            display: flex;
+            align-items: center;
+            justify-content: center;
         }
         .block1{
             width: 200px;
             height: 200px;
             background-color: rgb(255, 0, 221);
+            display: flex;
+            align-items: center;
+            justify-content: center;
         }
         .block2{
-            width: 200px;
-            height: 200px;
+            width: 100px;
+            height: 100px;
             background-color: green;
         }
     </style>
     <title>Document</title>
 </head>
 <body>
-    <div class="block"></div>
-    <div class="block1"></div>
-    <div class="block2"></div>
+    <div class="block" onclick="callback1">
+        <div class="block1">
+            <div class="block2"></div>
+        </div>
+    </div>
+
+   
     <script src="script.js"></script>
 </body>
 </html>

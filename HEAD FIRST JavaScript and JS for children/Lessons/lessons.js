@@ -2,7 +2,7 @@
 не исполнилось 12, но его сопровождает взрослый, пусть тоже проходит. Во всех
 остальных случаях вход запрещен.
 let age = 13;
-let accessableAge = 12;
+let accessableAge = 12; 
 let canEnter = age >= accessableAge;
 let withParents = false;
 console.log(canEnter || withParents); 
@@ -448,5 +448,22 @@ if (worthALook) {
 } else {
     console.log("You shouls really pass on the " + taxi.make + " " + taxi.model);
 }
+
+
+             ЗАДАЧА 29. Vowel Count
+function getCount(str) {
+  let vowelsCount = 0;
+  let abc = '';
+  
+  for (let i = 0; i < str.length; i++){
+    if (str[i] == 'a' || str[i] == 'e' || str[i] == 'i' ||
+       str[i] == 'o' || str[i] == 'u'){
+      vowelsCount++;
+    }
+}
+  
+  return vowelsCount;
+}
+
 
 */
